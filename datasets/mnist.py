@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 class MNIST(Dataset):
     
-    def __init__(self,data_src='./data_src/',category='train',transform=None,target_transform=None) -> None:
+    def __init__(self,data_src='./_data/',category='train',transform=None,target_transform=None) -> None:
         super(MNIST,self).__init__()
         assert (category=='train' or category=="valid" or category=="test")
         self.data_src = data_src

@@ -1,5 +1,7 @@
-*.ipynb
+tips.*
 
-MNIST/
-MNIST_ConvNet/
 __pycache__/
+
+_ckpt/**/
+_data/**/
+_logs/**/

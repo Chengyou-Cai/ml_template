@@ -1,1 +1,1 @@
-# ml_template
+# A Template of Machine Learning Framework Based on Pytorch-Lightning 

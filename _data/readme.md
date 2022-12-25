@@ -1,4 +1,4 @@
-# This dir is used for saving source data
+# This dir is used for saving raw data
 
 ## MNIST
 

@@ -19,7 +19,7 @@ class MLSystem():
     def __init__(self, config, splits, monitor="valid_Accuracy") -> None:
 
         self.config = config
-        self.logger = TensorBoardLogger(save_dir="./mylogs/",name=TM.__name__)
+        self.logger = TensorBoardLogger(save_dir="./_logs/",name=TM.__name__)
 
         self.data_drive = DD(self.config,splits=splits)
         self.model_ckpt = ModelCheckpoint(
@@ -27,7 +27,7 @@ class MLSystem():
             save_top_k=3,
             save_last=True,
             monitor=monitor,
-            dirpath=f"./checkpoint/{TM.__name__}/",
+            dirpath=f"./_ckpt/{TM.__name__}/",
             filename=f"{{epoch:02d}}_{{{monitor}:.2f}}"
         )
         self.trainer = pl.Trainer(
